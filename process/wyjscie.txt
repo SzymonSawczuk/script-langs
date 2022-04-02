@@ -1,0 +1,245 @@
+D	42.546245		Andor
+E	23.424076		United Arab Emirat
+F	33.93911		Afghanist
+G	17.060816		Antigua and Barbu
+I	18.220554		Anguil
+L	41.153332		Alban
+M	40.069099		Armen
+N	12.226079		Netherlands Antill
+O	-11.202692		Ango
+Q	-75.250973		Antarcti
+R	-38.416097		Argenti
+S	-14.270972		American Sam
+T	47.516231		Austr
+U	-25.274398		Austral
+W	12.52111		Aru
+Z	40.143105		Azerbaij
+A	43.915886		Bosnia and Herzegovi
+B	13.193887		Barbad
+D	23.684994		Banglade
+E	50.503887		Belgi
+F	12.238333		Burkina Fa
+G	42.733883		Bulgar
+H	25.930414		Bahra
+I	-3.373056		Burun
+J	9.30769		Ben
+M	32.321384		Bermu
+N	4.535277		Brun
+O	-16.290154		Boliv
+R	-14.235004		Braz
+S	25.03428		Baham
+T	27.514162		Bhut
+V	-54.423199		Bouvet Isla
+W	-22.328474		Botswa
+Y	53.709807		Belar
+Z	17.189877		Beli
+A	56.130366		Cana
+C	-12.164165		Cocos [Keeling] Islan
+D	-4.038333		Congo [DR
+F	6.611111		Central African Republ
+G	-0.228021		Congo [Republi
+H	46.818188		Switzerla
+I	7.539989		Cote d'Ivoi
+K	-21.236736		Cook Islan
+L	-35.675147		Chi
+M	7.369722		Camero
+N	35.86166		Chi
+O	4.570868		Colomb
+R	9.748917		Costa Ri
+U	21.521757		Cu
+V	16.002082		Cape Ver
+X	-10.447525		Christmas Isla
+Y	35.126413		Cypr
+Z	49.817492		Czech Republ
+E	51.165691		Germa
+J	11.825138		Djibou
+K	56.26392		Denma
+M	15.414999		Domini
+O	18.735693		Dominican Republ
+Z	28.033886		Alger
+C	-1.831239		Ecuad
+E	58.595272		Eston
+G	26.820553		Egy
+H	24.215527		Western Saha
+R	15.179384		Eritr
+S	40.463667		Spa
+T	9.145		Ethiop
+I	61.92411		Finla
+J	-16.578193		Fi
+K	-51.796253		Falkland Islands [Islas Malvina
+M	7.425554		Micrones
+O	61.892635		Faroe Islan
+R	46.227638		Fran
+A	-0.803689		Gab
+B	55.378051		United Kingd
+D	12.262776		Grena
+E	42.315407		Georg
+F	3.933889		French Guia
+G	49.465691		Guerns
+H	7.946527		Gha
+I	36.137741		Gibralt
+L	71.706936		Greenla
+M	13.443182		Gamb
+N	9.945587		Guin
+P	16.995971		Guadelou
+Q	1.650801		Equatorial Guin
+R	39.074208		Gree
+S	-54.429579		South Georgia and the South Sandwich Islan
+T	15.783471		Guatema
+U	13.444304		Gu
+W	11.803749		Guinea-Biss
+Y	4.860416		Guya
+Z	31.354676		Gaza Str
+K	22.396428		Hong Ko
+M	-53.08181		Heard Island and McDonald Islan
+N	15.199999		Hondur
+R	45.1		Croat
+T	18.971187		Hai
+U	47.162494		Hunga
+D	-0.789275		Indones
+E	53.41291		Irela
+L	31.046051		Isra
+M	54.236107		Isle of M
+N	20.593684		Ind
+O	-6.343194		British Indian Ocean Territo
+Q	33.223191		Ir
+R	32.427908		Ir
+S	64.963051		Icela
+T	41.87194		Ita
+E	49.214439		Jers
+M	18.109581		Jamai
+O	30.585164		Jord
+P	36.204824		Jap
+E	-0.023559		Ken
+G	41.20438		Kyrgyzst
+H	12.565679		Cambod
+I	-3.370417		Kiriba
+M	-11.875001		Comor
+N	17.357822		Saint Kitts and Nev
+P	40.339852		North Kor
+R	35.907757		South Kor
+W	29.31166		Kuwa
+Y	19.513469		Cayman Islan
+Z	48.019573		Kazakhst
+A	19.85627		La
+B	33.854721		Leban
+C	13.909444		Saint Luc
+I	47.166		Liechtenste
+K	7.873054		Sri Lan
+R	6.428055		Liber
+S	-29.609988		Lesot
+T	55.169438		Lithuan
+U	49.815273		Luxembou
+V	56.879635		Latv
+Y	26.3351		Lib
+A	31.791702		Moroc
+C	43.750298		Mona
+D	47.411631		Moldo
+E	42.708678		Monteneg
+G	-18.766947		Madagasc
+H	7.131474		Marshall Islan
+K	41.608635		Macedonia [FYRO
+L	17.570692		Ma
+M	21.913965		Myanmar [Burm
+N	46.862496		Mongol
+O	22.198745		Mac
+P	17.33083		Northern Mariana Islan
+Q	14.641528		Martiniq
+R	21.00789		Mauritan
+S	16.742498		Montserr
+T	35.937496		Mal
+U	-20.348404		Mauriti
+V	3.202778		Maldiv
+W	-13.254308		Mala
+X	23.634501		Mexi
+Y	4.210484		Malays
+Z	-18.665695		Mozambiq
+A	-22.95764		Namib
+C	-20.904305		New Caledon
+E	17.607789		Nig
+F	-29.040835		Norfolk Isla
+G	9.081999		Niger
+I	12.865416		Nicarag
+L	52.132633		Netherlan
+O	60.472024		Norw
+P	28.394857		Nep
+R	-0.522778		Nau
+U	-19.054445		Ni
+Z	-40.900557		New Zeala
+M	21.512583		Om
+A	8.537981		Pana
+E	-9.189967		Pe
+F	-17.679742		French Polynes
+G	-6.314993		Papua New Guin
+H	12.879721		Philippin
+K	30.375321		Pakist
+L	51.919438		Pola
+M	46.941936		Saint Pierre and Miquel
+N	-24.703615		Pitcairn Islan
+R	18.220833		Puerto Ri
+S	31.952162		Palestinian Territori
+T	39.399872		Portug
+W	7.51498		Pal
+Y	-23.442503		Paragu
+A	25.354826		Qat
+E	-21.115141		Reuni
+O	45.943161		Roman
+S	44.016521		Serb
+U	61.52401		Russ
+W	-1.940278		Rwan
+A	23.885942		Saudi Arab
+B	-9.64571		Solomon Islan
+C	-4.679574		Seychell
+D	12.862807		Sud
+E	60.128161		Swed
+G	1.352083		Singapo
+H	-24.143474		Saint Hele
+I	46.151241		Sloven
+J	77.553604		Svalbard and Jan May
+K	48.669026		Slovak
+L	8.460555		Sierra Leo
+M	43.94236		San Mari
+N	14.497401		Seneg
+O	5.152149		Somal
+R	3.919305		Surina
+T	0.18636		Sao Tome and Princi
+V	13.794185		El Salvad
+Y	34.802075		Syr
+Z	-26.522503		Swazila
+C	21.694025		Turks and Caicos Islan
+D	15.454166		Ch
+F	-49.280366		French Southern Territori
+G	8.619543		To
+H	15.870032		Thaila
+J	38.861034		Tajikist
+K	-8.967363		Tokel
+L	-8.874217		Timor-Les
+M	38.969719		Turkmenist
+N	33.886917		Tunis
+O	-21.178986		Ton
+R	38.963745		Turk
+T	10.691803		Trinidad and Toba
+V	-7.109535		Tuva
+W	23.69781		Taiw
+Z	-6.369028		Tanzan
+A	48.379433		Ukrai
+G	1.373333		Ugan
+M	U.S. Minor Outlying Islan
+S	37.09024		United Stat
+Y	-32.522779		Urugu
+Z	41.377491		Uzbekist
+A	41.902916		Vatican Ci
+C	12.984305		Saint Vincent and the Grenadin
+E	6.42375		Venezue
+G	18.420695		British Virgin Islan
+I	18.335765		U.S. Virgin Islan
+N	14.058324		Vietn
+U	-15.376706		Vanua
+F	-13.768752		Wallis and Futu
+S	-13.759029		Sam
+K	42.602636		Koso
+E	15.552727		Yem
+T	-12.8275		Mayot
+A	-30.559482		South Afri
+M	-13.133897		Zamb
+W	-19.015438		Zimbab
