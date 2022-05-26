@@ -11,6 +11,12 @@ impl<T> Graph<T>
 where
     T: std::cmp::Eq + std::hash::Hash + Clone + std::fmt::Display + std::fmt::Debug,
 {
+    pub fn new() -> Self {
+        Graph::<T> {
+            vertexes: HashMap::new(),
+        }
+    }
+
     pub fn add_vertex(&mut self, value: T) {
         if self.vertexes.contains_key(&value) {
             return;
@@ -24,6 +30,7 @@ where
         }
     }
 
+    /// Add edge by passing values of ends and weight of edge (optionally is it directed (default false))
     pub fn add_edge(&mut self, value_one: T, value_two: T, weight: usize, is_directed: bool) {
         if !self.vertexes.contains_key(&value_one) || !self.vertexes.contains_key(&value_two) {
             return;
@@ -34,7 +41,7 @@ where
             .get(&value_one)
             .unwrap()
             .get_edges()
-            .contains(&Edge::<T>::new(0, value_two.clone()))
+            .contains(&Edge::<T>::new(0, value_one.clone(), value_two.clone()))
         {
             self.vertexes
                 .get_mut(&value_one)
@@ -48,7 +55,7 @@ where
                 .get(&value_two)
                 .unwrap()
                 .get_edges()
-                .contains(&Edge::<T>::new(0, value_one.clone()))
+                .contains(&Edge::<T>::new(0, value_two.clone(), value_one.clone()))
         {
             self.vertexes
                 .get_mut(&value_two)
@@ -89,6 +96,7 @@ where
         }
     }
 
+    ///Breadth-first search starting from start_value of vertex
     pub fn bfs_algorithm(&self, start_value: T) {
         let mut queue: Vec<T> = Vec::new();
         let mut info: HashMap<T, (String, usize, T)> = HashMap::new();
@@ -129,10 +137,11 @@ where
             }
             info.get_mut(&first_element_in_queue).unwrap().0 = "BLACK".to_string();
         }
-
+        println!("Output info: vertex, {{color; distance_from_start; from_which_vertex}}");
         println!("{:#?}", info);
     }
 
+    ///Depth-first search
     pub fn dfs_algorithm(&self) {
         let mut info: HashMap<T, (String, (usize, usize), T)> = HashMap::new();
 
@@ -151,6 +160,7 @@ where
             }
         }
 
+        println!("Output info: vertex, {{color; (enter_time, leave_time); from_which_vertex}}");
         println!("{:#?}", info);
     }
 
