@@ -5,8 +5,6 @@ import requests
 import uuid
 import ffmpeg
 
-
-
 class StaticVideoDownloader(VideoDownloader):
     __THUMBNAIL = "https://www.instandngs4p.eu/wp-content/themes/fox/images/placeholder.jpg"
     def __init__(self, web_url, video_url) -> None:

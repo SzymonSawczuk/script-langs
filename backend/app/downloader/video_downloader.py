@@ -2,7 +2,6 @@ from abc import ABC, abstractmethod
 
 from pathlib import Path
 
-
 class VideoDownloader(ABC):
     BASE_DIR = Path(".").resolve().parent
     print(BASE_DIR)
