@@ -1,13 +1,22 @@
-<html>
 <head>
     <title>Live Video Details</title>
     <!-- <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet"> -->
 </head>
 <body>
-    <h1>{{url}}</h1>
+    <h1>{{title}}</h1><br/><br/>
+    <img src={{thumbnail}} height="100px"/>
+    
     <form method="post">
-        <input type="text" value="time" name="time" />
-        <button type="submit" formaction="/live-video/download">
+        <input type="text" name="time_to_end" >
+
+        <select id="resolution" name="resolution">
+            {% for resolution in resolutions %}
+                <option value="{{resolution}}" >{{resolution}}</option>
+            {% endfor %}
+        </select><br/><br/>
+        
+        <input type="hidden" value={{downloader_index}} name="downloader_index" />
+        <button type="submit" formaction="/download">
             Submit 1
         </button>
     </form>

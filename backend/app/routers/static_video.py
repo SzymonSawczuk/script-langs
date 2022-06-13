@@ -5,8 +5,6 @@ from urllib3 import HTTPResponse
 
 from ..dependencies import AnyForm, get_templates
 
-from starlette.responses import FileResponse
-
 router = APIRouter(
     prefix="/static-video",
     tags=["static-video"],
@@ -20,15 +18,9 @@ router = APIRouter(
     response_class=HTTPResponse
 )
 async def get_video(request: Request, url: str = Form(), templates: Jinja2Templates = Depends(get_templates)):
-    downloader = await AnyForm.get_downloader_async(url)
-    AnyForm.global_downloader = downloader
-    return templates.TemplateResponse("video.html", {"request": request, "url": downloader.get_info()})
-    
-@router.post(
-    "/download",
-    tags=["static-video"],
-    responses={403: {"description": "Operation forbidden"}}
-)
-async def download_video(request: Request, templates: Jinja2Templates = Depends(get_templates)):
-    location = AnyForm.global_downloader.download_video()
-    return FileResponse(location, media_type='application/octet-stream',filename="result.mp4")
+    (downloader, downloader_index) = await AnyForm.get_downloader_async(url)
+    download_info = downloader.get_info()
+    return templates.TemplateResponse("video.html", {"request": request, "title": download_info["title"],
+                                                     "thumbnail": download_info["thumbnail"], 
+                                                     "duration_minutes": int(download_info["duration"]/60), "duration_seconds": int(download_info["duration"]%60),
+                                                     "resolutions": download_info["resolutions"], "downloader_index": downloader_index}) 

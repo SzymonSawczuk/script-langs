@@ -4,10 +4,21 @@
     <!-- <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet"> -->
 </head>
 <body>
-    <h1>{{url}}</h1>
+    <h1>{{title}}</h1><br/><br/>
+    <img src={{thumbnail}} height="100px"/>
+    <p>{{duration_minutes}}:{{duration_seconds}}</p>
+
+    
     <form method="post">
-        <!-- <input type="text" value={{location}} name="location" /> -->
-        <button type="submit" formaction="/static-video/download">
+        <select id="resolution" name="resolution">
+            {% for resolution in resolutions %}
+                <option value="{{resolution}}" >{{resolution}}</option>
+            {% endfor %}
+          </select>
+
+        <input type="hidden" value={{downloader_index}} name="downloader_index" />
+        <input type="hidden" value="0" name="time_to_end" />
+        <button type="submit" formaction="/download">
             Submit 1
         </button>
     </form>
