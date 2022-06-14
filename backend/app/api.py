@@ -24,7 +24,7 @@ async def root(request: Request, templates: Jinja2Templates = Depends(get_templa
     "/download",
     tags=["download-video"]
 )
-async def download_video(resolution: str = Form(), downloader_index: int = Form(), time_to_end: int = Form()):
+async def download_video(resolution: str = Form(), downloader_index: int = Form(), time_to_end: float = Form()):
     print(AnyForm.global_locations)
     if not resolution in AnyForm.global_locations[downloader_index].keys():
         location = AnyForm.global_downloader[downloader_index].download_video(resolution, time_to_end)

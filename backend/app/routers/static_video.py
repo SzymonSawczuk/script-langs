@@ -1,4 +1,3 @@
-from turtle import down
 from fastapi import APIRouter, Depends, Request, Form
 from fastapi.templating import Jinja2Templates
 from urllib3 import HTTPResponse
