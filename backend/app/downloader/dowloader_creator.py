@@ -57,7 +57,7 @@ class DownloaderCreator():
 
     async def create_downloader(self, web_url) -> VideoDownloader:
         if not web_url[0:4] == "http": 
-            raise HTTPException(status_code=400, detail="type of url not avaible")
+            raise HTTPException(status_code=400, detail="Type of url not avaible")
 
         try:
             type_of_downloader = await self.__detect_video_type(web_url)
@@ -65,10 +65,10 @@ class DownloaderCreator():
             raise HTTPException(status_code=500, detail="Error occurs while loading the url")
 
         if type_of_downloader[1] == "live":
-            raise HTTPException(status_code=400, detail="type of video is live, use other option avaible on site")
+            raise HTTPException(status_code=400, detail="Type of video is live, use other option avaible on site")
 
         if type_of_downloader[0] == None:
-            raise HTTPException(status_code=400, detail="type of video not avaible")
+            raise HTTPException(status_code=400, detail="Type of video not avaible")
 
         if type_of_downloader[0] == StaticVideoDownloader:
             return StaticVideoDownloader(web_url, type_of_downloader[1])    
@@ -77,7 +77,7 @@ class DownloaderCreator():
 
     async def create_live_downloader(self, web_url) -> VideoDownloader:
         if not web_url[0:4] == "http": 
-            raise HTTPException(status_code=400, detail="type of url not avaible")
+            raise HTTPException(status_code=400, detail="Type of url not avaible")
 
         if web_url.split("/")[2] in self.__avaible_live_webs:
             ydl = youtube_dl.YoutubeDL()
@@ -100,8 +100,8 @@ class DownloaderCreator():
                 return LiveVideoDownloader(web_url)
 
             else: 
-                raise HTTPException(status_code=400, detail="type of video not live")  
+                raise HTTPException(status_code=400, detail="Type of video is not live")  
         else:
-            raise HTTPException(status_code=400, detail="type of video not avaible")
+            raise HTTPException(status_code=400, detail="Type of video not avaible")
 
 
