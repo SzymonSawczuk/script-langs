@@ -4,3 +4,4 @@ streamlink==4.1.0
 ffmpeg==1.4
 ffmpeg-python==0.2.0
 fastapi==0.78.0
+uvicorn==0.17.6
