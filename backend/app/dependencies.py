@@ -31,7 +31,7 @@ class AnyForm():
         return await AnyForm.__helper_get_downloader(web_url, downloaderCreator.create_live_downloader)
 
 def get_templates():
-    return Jinja2Templates(directory=Path(BASE_DIR, "frontend/static"))
+    return Jinja2Templates(directory=Path(BASE_DIR, "frontend/templates"))
     
 
 
