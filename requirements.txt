@@ -1,0 +1,6 @@
+yt-dlp==2022.5.18
+requests-html==0.10.0
+streamlink==4.1.0
+ffmpeg==1.4
+ffmpeg-python==0.2.0
+fastapi==0.78.0

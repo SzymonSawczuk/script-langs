@@ -5,7 +5,7 @@ from .basicwebs_downloader import BasicWebsVideoDownloader
 from requests_html import AsyncHTMLSession
 from starlette.exceptions import HTTPException
 import mimetypes
-import youtube_dl
+import yt_dlp
 
 class DownloaderCreator():
     __avaible_static_webs = ["www.youtube.com", "twitter.com", "vimeo.com", "youtu.be"]
@@ -31,7 +31,7 @@ class DownloaderCreator():
     async def __detect_video_type(self, web_url):
         if web_url.split("/")[2] in self.__avaible_static_webs:
             
-            ydl = youtube_dl.YoutubeDL()
+            ydl = yt_dlp.YoutubeDL()
 
             with ydl:
                 result = ydl.extract_info(
@@ -80,7 +80,7 @@ class DownloaderCreator():
             raise HTTPException(status_code=400, detail="Type of url not avaible")
 
         if web_url.split("/")[2] in self.__avaible_live_webs:
-            ydl = youtube_dl.YoutubeDL()
+            ydl = yt_dlp.YoutubeDL()
 
             try:
                 with ydl:

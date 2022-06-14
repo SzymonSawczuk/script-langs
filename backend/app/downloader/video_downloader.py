@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 from pathlib import Path
 
 class VideoDownloader(ABC):
-    BASE_DIR = Path(".").resolve().parent
+    BASE_DIR = Path(".").resolve()
     print(BASE_DIR)
 
     def __init__(self, web_url) -> None:

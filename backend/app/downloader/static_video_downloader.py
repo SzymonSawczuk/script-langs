@@ -1,6 +1,4 @@
-from turtle import width
 from .video_downloader import VideoDownloader
-from pathlib import Path
 import requests
 import uuid
 import ffmpeg

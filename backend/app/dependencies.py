@@ -3,7 +3,7 @@ from fastapi.templating import Jinja2Templates
 from .downloader.dowloader_creator import DownloaderCreator
 from .downloader.video_downloader import VideoDownloader
 
-BASE_DIR = Path(".").resolve().parent
+BASE_DIR = Path(".").resolve()
 print(BASE_DIR)
 
 class AnyForm():
