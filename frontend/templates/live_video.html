@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Live Video Details</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content center-column">
+        <header>
+            <h1><a href="/">Video downloader</a></h1>
+        </header>
+
+        <div class="content-inner center-row">
+            <div class="thumbnail">
+                <img src={{thumbnail}} class="thumbnail-image" />
+            </div>
+
+            <div class="right-side">
+                <h3>{{title}}</h3>
+                <p>Duration: LIVE</p>
+                <form method="post" class="center-column">
+                    <input type="hidden" value={{downloader_index}} name="downloader_index" />
+
+                    <div class="buttons center-row justify-left">
+                        <input type="text" class="text-input text-input-number" name="time_to_end" placeholder="min.sec"
+                            autocomplete="off" required>
+                        <select id="resolution" name="resolution" required>
+                            {% for resolution in resolutions %}
+                            <option value="{{resolution}}">{{resolution}}</option>
+                            {% endfor %}
+                        </select>
+                        <button type="submit" formaction="/download">
+                            Download
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

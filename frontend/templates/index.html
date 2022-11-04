@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Video downloader</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content center-column">
+        <header>
+            <h1><a href="/">Video downloader</a></h1>
+        </header>
+
+        <div class="content-inner">
+            <form method="post" class="center-column">
+
+                <input type="url" id="url" class="text-input" name="url" placeholder="Type url of the video here"
+                    autocomplete="off" required><br>
+
+                <div class="buttons center-row justify-right">
+                    <button type="submit" formaction="/live-video">
+                        Download live video
+                    </button>
+
+                    <button type="submit" formaction="/static-video">
+                        Download video
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
